@@ -64,37 +64,6 @@
                 {{ $errors->first('password_confirmation') }}
             </p>
 
-            <!-- Phone -->
-            <div class="mt-4">
-                <x-label for="phone" :value="__('app.auth.phone-number')" class="pb-1 pl-1 input-label" />
-                <x-input id="phone" :value="old('phone')" class="input-style w-full" type="text" name="phone" />
-                <p class="{{ $errors->has('phone') ? 'flex text-red mt-2 pl-1' : 'hidden' }}">
-                    {{ $errors->first('phone') }}
-                </p>
-            </div>
-
-            <!-- CV -->
-            <div class="mt-4">
-                <x-label for="cv" :value="__('app.auth.o-mojstoru')" class="pb-1 pl-1 input-label" />
-                <textarea name="cv" rows="4" class="input-style w-full">{{ old('cv') }}</textarea>
-                <p class="{{ $errors->has('cv') ? 'flex text-red mt-2 pl-1' : 'hidden' }}">
-                    {{ $errors->first('cv') }}
-                </p>
-            </div>
-
-            <!-- Profile Image -->
-            <x-label for="user_image" :value="__('app.auth.profile-pics')" class="pb-1 pl-1 input-label mt-4" />
-            <div class="flex flex-col sm:flex-row">
-                <label for="file-upload" class="image-upload-btn px-4 py-3 cursor-pointer text-center">
-                    {{ __('app.profile.choose-image') }}
-                </label>
-                <input id="file-upload" name="user_image" type="file" style="display:none;">
-                <input id="uploadFile" class="text-center sm:text-left sm:pl-3 pl-0 sm:mt-0 mt-2 max-w-full"
-                    placeholder="{{ __('app.profile.no-img-selected') }}" disabled="disabled" />
-            </div>
-            <p class="{{ $errors->has('user_image') ? 'flex text-red mt-2 pl-1' : 'hidden' }}">
-                {{ $errors->first('user_image') }}</p>
-
             <!-- Submit Button -->
             <div class="flex justify-center mt-24 form-buttons">
                 <button class="mt-3 confirm-btn">

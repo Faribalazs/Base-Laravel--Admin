@@ -40,7 +40,7 @@
                             class="icons {{ request()->routeIs('admin.dashboard') ? 'closed-icon-active' : '' }}">
                             <i class="ri-home-4-line"></i>
                         </a>
-                        <a href="{{ route('admin.users') }}"
+                        {{-- <a href="{{ route('admin.users') }}"
                             class="icons {{ request()->routeIs('admin.users') ? 'closed-icon-active' : '' }}">
                             <i class="ri-group-line"></i>
                         </a>
@@ -48,27 +48,7 @@
                             class="icons 
                             {{ request()->routeIs('admin.workers') ? 'closed-icon-active' : '' }}">
                             <i class="ri-group-fill"></i>
-                        </a>
-                        <a href="{{ route('admin.workers.with.premium') }}"
-                            class="icons 
-                            {{ request()->routeIs('admin.workers.with.premium') ? 'closed-icon-active' : '' }}">
-                            <i class="ri-group-fill"></i>
-                        </a>
-                        <a href="{{ route('admin.categories') }}"
-                            class="icons 
-                            {{ request()->routeIs('admin.categories') ? 'closed-icon-active' : '' }}">
-                            <i class="ri-function-line"></i>
-                        </a>
-                        <a href="{{ route('admin.subcategories') }}"
-                            class="icons 
-                            {{ request()->routeIs('admin.subcategories') ? 'closed-icon-active' : '' }}">
-                            <i class="ri-dashboard-line"></i>
-                        </a>
-                        <a href="{{ route('admin.pozicija') }}"
-                            class="icons 
-                            {{ request()->routeIs('admin.pozicija') ? 'closed-icon-active' : '' }}">
-                            <i class="ri-menu-2-line"></i>
-                        </a>
+                        </a> --}}
                         <a href="{{ route('admin.sections.create') }}"
                             class="icons 
                             {{ request()->routeIs('admin.sections.create') ? 'closed-icon-active' : '' }}">
@@ -84,24 +64,12 @@
                         <a href="{{ route('admin.dashboard') }}" class="link">
                             {{ __('app.admin.dashboard') }}
                         </a>
-                        <a href="{{ route('admin.users') }}" class="link">
+                        {{-- <a href="{{ route('admin.users') }}" class="link">
                             {{ __('app.admin.users') }}
                         </a>
                         <a href="{{ route('admin.workers') }}" class="link">
                             {{ __('app.admin.workers') }}
-                        </a>
-                        <a href="{{ route('admin.workers.with.premium') }}" class="link">
-                            {{ __('app.admin.workers-with-premium') }}
-                        </a>
-                        <a href="{{ route('admin.categories') }}" class="link">
-                            {{ __('app.admin.categories') }}
-                        </a>
-                        <a href="{{ route('admin.subcategories') }}" class="link">
-                            {{ __('app.admin.subcategories') }}
-                        </a>
-                        <a href="{{ route('admin.pozicija') }}" class="link">
-                            {{ __('app.admin.pozicije') }}
-                        </a>
+                        </a> --}}
                         <a href="{{ route('admin.sections.create') }}" class="link">
                             {{ __('app.admin.sections') }}
                         </a>

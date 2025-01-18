@@ -66,42 +66,6 @@
                     </div>
                 @endif
             @endif
-            @if (Auth::guard('worker')->check())
-                @if (Auth::guard('worker')->user()->hasRole('worker') || Auth::guard('worker')->user()->hasRole('super_worker'))
-                    <div class="hidden space-x-8 sm:-my-px xl:flex items-center">
-                        <x-nav-link :href="route('worker.catalogue-categories')" :active="request()->routeIs('worker.catalogue-categories')">
-                            {{ __('app.categories.catalogue-categories') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-            @endif
-            @if (Auth::guard('worker')->check())
-                @if (Auth::guard('worker')->user()->hasRole('worker') || Auth::guard('worker')->user()->hasRole('super_worker'))
-                    <div class="hidden space-x-8 sm:-my-px xl:flex items-center">
-                        <x-nav-link :href="route('worker.new.ponuda')" :active="request()->routeIs('worker.new.ponuda')">
-                            {{ __('app.nav.new-ponuda') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-            @endif
-            @if (Auth::guard('worker')->check())
-                @if (Auth::guard('worker')->user()->hasRole('worker') || Auth::guard('worker')->user()->hasRole('super_worker'))
-                    <div class="hidden space-x-8 sm:-my-px xl:flex items-center">
-                        <x-nav-link :href="route('worker.options.update')" :active="request()->routeIs('worker.options*')">
-                            {{ __('app.nav.my-categories') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-            @endif
-            @if (Auth::guard('worker')->check())
-                @if (Auth::guard('worker')->user()->hasRole('worker') || Auth::guard('worker')->user()->hasRole('super_worker'))
-                    <div class="hidden space-x-8 sm:-my-px xl:flex items-center">
-                        <x-nav-link :href="route('worker.archive')" :active="request()->routeIs('worker.archive*')">
-                            {{ __('app.nav.archive') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-            @endif
 
             <!-- Settings Dropdown -->
             <div class="hidden xl:flex xl:items-center xl:ml-6 space-x-5">

@@ -31,12 +31,6 @@
                 <span>{{ __('app.auth.dont-have-acc') }}</span>
                 <a href="{{ route('worker.register') }}" class="sing-up pl-1">{{ __('app.auth.sing-up') }}</a>
             </div>
-            <div class="or-line">
-                <span class="or-text">{{ __('app.auth.or') }}</span>
-            </div>
-            <a href="{{ route('worker.login.google') }}" class="google-btn">
-                {{ __('app.auth.google') }}<i class="ri-google-fill text-2xl pl-2"></i>
-            </a>
         </form>
     </div>
 
